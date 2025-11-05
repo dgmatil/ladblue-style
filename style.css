@@ -1,0 +1,126 @@
+/* ベース設定 */
+.game-report {
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 見出し */
+.game-header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+/* チームロゴ */
+.team-logos img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* セクション見出し */
+section h2 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 4px solid #007aff;
+  padding-left: 8px;
+}
+
+/* リスト */
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* 表（スコア・順位） */
+.scoreboard table,
+.standings table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 0.95em;
+}
+
+.scoreboard th,
+.scoreboard td,
+.standings th,
+.standings td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+/* 表の色分け */
+.scoreboard thead tr,
+.standings thead tr {
+  background-color: #f0f0f0;
+}
+
+.scoreboard tbody tr:nth-child(even),
+.standings tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.scoreboard tbody tr:nth-child(odd),
+.standings tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* 折りたたみ成績 */
+.player-performance-tabs details {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+/* トピックスリンク */
+.topics a {
+  color: #007aff;
+  text-decoration: none;
+}
+.topics a:hover {
+  text-decoration: underline;
+}
+
+/* 次戦予告 */
+.next-game {
+  margin-top: 40px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .game-report {
+    padding: 15px;
+  }
+
+  .team-logos img {
+    height: 32px;
+  }
+
+  .scoreboard table,
+  .standings table {
+    font-size: 0.85em;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  .game-header h1 {
+    font-size: 1.4em;
+  }
+}

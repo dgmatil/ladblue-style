@@ -28,8 +28,8 @@ body {
   vertical-align: middle;
 }
 
-/* セクション見出し（ドジャーブルーで統一・強制上書き） */
-section h2 {
+/* セクション見出し（優先度強化） */
+.game-report section h2 {
   font-size: 1.4em;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -139,5 +139,6 @@ section h2 {
     font-size: 1.4em;
   }
 }
+
 
 

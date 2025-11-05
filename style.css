@@ -28,14 +28,9 @@ body {
   vertical-align: middle;
 }
 
-/* 投稿全体の見出し色統一 */
-.game-report h2 {
-  font-size: 1.4em;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  border-left: 4px solid #005A9C !important;
-  padding-left: 8px;
+section.game-report h2 {
   color: #005A9C !important;
+  border-left: 4px solid #005A9C !important;
 }
 
 /* リスト */
@@ -139,6 +134,7 @@ section h2 {
     font-size: 1.4em;
   }
 }
+
 
 
 

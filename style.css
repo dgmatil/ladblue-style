@@ -28,8 +28,9 @@ section h2 {
   font-size: 1.4em;
   margin-top: 30px;
   margin-bottom: 10px;
-  border-left: 4px solid #007aff;
+  border-left: 4px solid #005ecb;
   padding-left: 8px;
+  color: #222;
 }
 
 /* リスト */
@@ -61,7 +62,7 @@ ul, ol {
 /* 表の色分け */
 .scoreboard thead tr,
 .standings thead tr {
-  background-color: #f0f0f0;
+  background-color: #f2f4f7;
 }
 
 .scoreboard tbody tr:nth-child(even),
@@ -85,11 +86,12 @@ ul, ol {
 
 /* トピックスリンク */
 .topics a {
-  color: #007aff;
+  color: #005ecb;
   text-decoration: none;
 }
 .topics a:hover {
   text-decoration: underline;
+  color: #003e91;
 }
 
 /* 次戦予告 */
@@ -123,5 +125,4 @@ ul, ol {
   .game-header h1 {
     font-size: 1.4em;
   }
-
 }

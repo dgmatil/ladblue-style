@@ -28,14 +28,14 @@ body {
   vertical-align: middle;
 }
 
-/* セクション見出し（ドジャーブルーで統一） */
+/* セクション見出し（ドジャーブルーで統一・強制上書き） */
 section h2 {
   font-size: 1.4em;
   margin-top: 30px;
   margin-bottom: 10px;
-  border-left: 4px solid #005A9C;
+  border-left: 4px solid #005A9C !important;
   padding-left: 8px;
-  color: #005A9C;
+  color: #005A9C !important;
 }
 
 /* リスト */
@@ -139,4 +139,5 @@ section h2 {
     font-size: 1.4em;
   }
 }
+
 

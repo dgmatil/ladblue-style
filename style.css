@@ -124,3 +124,22 @@ tr:nth-child(odd) td { background-color: #ffffff; }
   font-size: 0.95rem;
   color: #555;
 }
+
+.scoreboard table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 12px 0 !important;
+  font-size: 15px !important;
+}
+.scoreboard th,
+.scoreboard td {
+  border: 1px solid #ccc !important;
+  padding: 8px !important;
+  text-align: center !important;
+}
+.scoreboard thead {
+  background-color: #f0f0f0 !important;
+}
+.scoreboard tbody tr:nth-child(even) {
+  background-color: #fafafa !important;
+}

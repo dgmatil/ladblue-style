@@ -66,29 +66,53 @@ a[style*="padding"] {
 }
 
 /* ====================================
-   表・スコアボード（強制適用版）
+   スコアボード（Picture Window対応）
 ==================================== */
 .scoreboard {
-  border-collapse: collapse !important;
-  width: 100% !important;
-  margin: 12px 0 !important;
-  font-size: 15px !important;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 16px 0;
 }
+
+.scoreboard table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
 .scoreboard th,
 .scoreboard td {
   border: 1px solid #ccc !important;
   padding: 8px !important;
   text-align: center !important;
 }
+
 .scoreboard thead {
   background-color: #f0f0f0 !important;
 }
+
 .scoreboard tr:nth-child(even) {
   background-color: #fafafa !important;
 }
 
+.scoreboard th:first-child {
+  border-top-left-radius: 6px !important;
+}
+.scoreboard th:last-child {
+  border-top-right-radius: 6px !important;
+}
+.scoreboard tr:last-child td:first-child {
+  border-bottom-left-radius: 6px !important;
+}
+.scoreboard tr:last-child td:last-child {
+  border-bottom-right-radius: 6px !important;
+}
+
 /* ====================================
-   レスポンシブ対応（必要に応じて）
+   レスポンシブ対応
 ==================================== */
 @media (max-width: 768px) {
   .game-report {
@@ -98,101 +122,4 @@ a[style*="padding"] {
   .game-header h1 {
     font-size: 1.3rem;
   }
-}
-
-.scoreboard {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  border-radius: 6px !important;
-  overflow: hidden !important;
-}
-.scoreboard table {
-  border-radius: 6px !important;
-  overflow: hidden !important;
-}
-.scoreboard th:first-child {
-  border-top-left-radius: 6px !important;
-}
-.scoreboard th:last-child {
-  border-top-right-radius: 6px !important;
-}
-.scoreboard tr:last-child td:first-child {
-  border-bottom-left-radius: 6px !important;
-}
-.scoreboard tr:last-child td:last-child {
-  border-bottom-right-radius: 6px !important;
-}
-
-table.scoreboard {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  border-radius: 6px !important;
-  overflow: hidden !important;
-  width: 100% !important;
-  font-size: 15px !important;
-}
-table.scoreboard th,
-table.scoreboard td {
-  border: 1px solid #ccc !important;
-  padding: 8px !important;
-  text-align: center !important;
-}
-table.scoreboard thead {
-  background-color: #f0f0f0 !important;
-}
-table.scoreboard tr:nth-child(even) {
-  background-color: #fafafa !important;
-}
-table.scoreboard th:first-child {
-  border-top-left-radius: 6px !important;
-}
-table.scoreboard th:last-child {
-  border-top-right-radius: 6px !important;
-}
-table.scoreboard tr:last-child td:first-child {
-  border-bottom-left-radius: 6px !important;
-}
-table.scoreboard tr:last-child td:last-child {
-  border-bottom-right-radius: 6px !important;
-}
-
-.scoreboard {
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.scoreboard table {
-  border-collapse: separate;
-  border-spacing: 0;
-  width: 100%;
-  font-size: 15px;
-  border-radius: 6px;
-}
-
-.scoreboard th,
-.scoreboard td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-}
-
-.scoreboard thead {
-  background-color: #f0f0f0;
-}
-
-.scoreboard tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
-.scoreboard th:first-child {
-  border-top-left-radius: 6px;
-}
-.scoreboard th:last-child {
-  border-top-right-radius: 6px;
-}
-.scoreboard tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
-}
-.scoreboard tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
 }

@@ -1,141 +1,79 @@
-/* ベース設定 */
-body {
-  background-color: #ffffff;
-  color: #181818;
+/* ====================================
+   基本設定（フォント・本文・画像）
+==================================== */
+html, body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-variant-ligatures: none;
+  color: #222;
 }
-
-.game-report {
-  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
+img, .separator img, a img {
+  display: block;
   margin: 0 auto;
-  padding: 20px;
+  vertical-align: bottom;
 }
+.separator { ... }
+a[style*="padding"] { padding: 0 !important; }
 
-/* 見出し */
-.game-header h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #E0E0E0;
-  padding-bottom: 4px;
-  color: #181818;
-}
+/* ====================================
+   投稿テンプレート構造
+==================================== */
+.post-container { ... }
+.post-title { ... }
+.post-lead { ... }
+.post-body p { ... }
+.post-quote { ... }
+.post-after { ... }
+.comment-cta { ... }
+.post-note { ... }
 
-/* チームロゴ */
-.team-logos img {
-  height: 40px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
+/* ====================================
+   表・テーブル系（共通）
+==================================== */
+table, th, td { ... }
+caption { ... }
+tr:nth-child(even) td { background-color: #f9f9f9; }
+tr:nth-child(odd) td { background-color: #ffffff; }
 
-section.game-report h2 {
-  color: #005A9C !important;
-  border-left: 4px solid #005A9C !important;
-}
+/* ====================================
+   スコアボード・打撃成績・ランキング
+==================================== */
+.scoreboard { ... }
+.table_20250507 { ... }
+.ranking_table { ... }
+.yamamoto_ws_stats_20251102 { ... }
 
-/* リスト */
-ul, ol {
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
+/* ====================================
+   Shoheiカード・Dodgers構造
+==================================== */
+.Shohei-board-cont { ... }
+.Shohei-stat-val { ... }
+.dodgers-header { ... }
+.dodgers-table { ... }
+.dodgers-footer { ... }
 
-/* 表（スコア・順位） */
-.scoreboard table,
-.standings table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  overflow: hidden;
-  font-size: 0.95em;
-  background-color: #FAFAFC;
-}
+/* ====================================
+   装飾・引用・注釈
+==================================== */
+.menuLineLightW, .menuLineLightW2 { ... }
+.blockquote2 { ... }
+.dotted-underline { ... }
+.post-divider { ... }
 
-.scoreboard th,
-.scoreboard td,
-.standings th,
-.standings td {
-  border: 1px solid #E0E0E0;
-  padding: 6px 8px;
-  text-align: center;
-  color: #181818;
-}
+/* ====================================
+   チャート・グラフ・図表
+==================================== */
+.chart-wrapper { ... }
+.chart-svg { ... }
+.metric-legend { ... }
+.metric-legend table { ... }
 
-/* 表の色分け */
-.scoreboard thead tr,
-.standings thead tr {
-  background-color: #F0F2F5;
-}
-
-.scoreboard tbody tr:nth-child(even),
-.standings tbody tr:nth-child(even) {
-  background-color: #ffffff;
-}
-
-.scoreboard tbody tr:nth-child(odd),
-.standings tbody tr:nth-child(odd) {
-  background-color: #FAFAFC;
-}
-
-/* 折りたたみ成績 */
-.player-performance-tabs details {
-  margin-bottom: 10px;
-  border: 1px solid #E0E0E0;
-  border-radius: 5px;
-  padding: 8px;
-  background-color: #FAFAFC;
-  color: #181818;
-}
-
-/* トピックスリンク */
-.topics a {
-  color: #005A9C;
-  text-decoration: none;
-}
-.topics a:hover {
-  text-decoration: underline;
-  color: #003e75;
-}
-
-/* 次戦予告 */
-.next-game {
-  margin-top: 40px;
-  padding: 10px;
-  border-top: 1px solid #E0E0E0;
-  font-size: 0.95em;
-  color: #555;
-}
-
-/* レスポンシブ対応 */
-@media screen and (max-width: 600px) {
-  .game-report {
-    padding: 15px;
-  }
-
-  .team-logos img {
-    height: 32px;
-  }
-
-  .scoreboard table,
-  .standings table {
-    font-size: 0.85em;
-  }
-
-section h2 {
-  font-size: 1.4em;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  border-left: 4px solid #005A9C !important;
-  padding-left: 8px;
-  color: #005A9C !important;
-}
-
-  .game-header h1 {
-    font-size: 1.4em;
-  }
-}
-
-
-
-
-
+/* ====================================
+   レスポンシブ対応
+==================================== */
+@media (max-width: 600px) { ... }
+@media (max-width: 768px) { ... }
+@media (min-width: 769px) and (max-width: 1024px) { ... }
+@media (max-width: 640px) { ... }
+@media (max-width: 560px) { ... }

@@ -77,3 +77,50 @@ tr:nth-child(odd) td { background-color: #ffffff; }
 @media (min-width: 769px) and (max-width: 1024px) { ... }
 @media (max-width: 640px) { ... }
 @media (max-width: 560px) { ... }
+
+.game-report {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 820px;
+  margin: 20px auto;
+}
+
+.game-header h1 {
+  font-size: 1.6rem;
+  color: #073b82;
+  margin-bottom: 12px;
+}
+
+.team-logos {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.starting-lineup ol li {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.season-stats ul li,
+.game-summary p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.topics ul li a {
+  color: #005A9C;
+  text-decoration: underline;
+}
+
+.next-game {
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}

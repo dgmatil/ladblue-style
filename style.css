@@ -13,110 +13,50 @@ img, .separator img, a img {
   margin: 0 auto;
   vertical-align: bottom;
 }
-.separator { ... }
-a[style*="padding"] { padding: 0 !important; }
+.separator {
+  margin: 1em auto;
+  text-align: center;
+}
+a[style*="padding"] {
+  padding: 0 !important;
+}
 
 /* ====================================
    投稿テンプレート構造
 ==================================== */
-.post-container { ... }
-.post-title { ... }
-.post-lead { ... }
-.post-body p { ... }
-.post-quote { ... }
-.post-after { ... }
-.comment-cta { ... }
-.post-note { ... }
-
-/* ====================================
-   表・テーブル系（共通）
-==================================== */
-table, th, td { ... }
-caption { ... }
-tr:nth-child(even) td { background-color: #f9f9f9; }
-tr:nth-child(odd) td { background-color: #ffffff; }
-
-/* ====================================
-   スコアボード・打撃成績・ランキング
-==================================== */
-.scoreboard { ... }
-.table_20250507 { ... }
-.ranking_table { ... }
-.yamamoto_ws_stats_20251102 { ... }
-
-/* ====================================
-   Shoheiカード・Dodgers構造
-==================================== */
-.Shohei-board-cont { ... }
-.Shohei-stat-val { ... }
-.dodgers-header { ... }
-.dodgers-table { ... }
-.dodgers-footer { ... }
-
-/* ====================================
-   装飾・引用・注釈
-==================================== */
-.menuLineLightW, .menuLineLightW2 { ... }
-.blockquote2 { ... }
-.dotted-underline { ... }
-.post-divider { ... }
-
-/* ====================================
-   チャート・グラフ・図表
-==================================== */
-.chart-wrapper { ... }
-.chart-svg { ... }
-.metric-legend { ... }
-.metric-legend table { ... }
-
-/* ====================================
-   レスポンシブ対応
-==================================== */
-@media (max-width: 600px) { ... }
-@media (max-width: 768px) { ... }
-@media (min-width: 769px) and (max-width: 1024px) { ... }
-@media (max-width: 640px) { ... }
-@media (max-width: 560px) { ... }
-
 .game-report {
   padding: 20px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   max-width: 820px;
   margin: 20px auto;
 }
-
 .game-header h1 {
   font-size: 1.6rem;
   color: #073b82;
   margin-bottom: 12px;
 }
-
 .team-logos {
   display: flex;
   gap: 12px;
   justify-content: center;
   margin-bottom: 16px;
 }
-
 .starting-lineup ol li {
   margin-bottom: 6px;
   font-weight: 500;
 }
-
 .season-stats ul li,
 .game-summary p {
   font-size: 15px;
   line-height: 1.7;
   margin-bottom: 8px;
 }
-
 .topics ul li a {
   color: #005A9C;
   text-decoration: underline;
 }
-
 .next-game {
   border-top: 1px solid #ccc;
   padding-top: 12px;
@@ -125,7 +65,10 @@ tr:nth-child(odd) td { background-color: #ffffff; }
   color: #555;
 }
 
-.scoreboard table {
+/* ====================================
+   表・スコアボード（強制適用版）
+==================================== */
+.scoreboard {
   border-collapse: collapse !important;
   width: 100% !important;
   margin: 12px 0 !important;
@@ -140,6 +83,19 @@ tr:nth-child(odd) td { background-color: #ffffff; }
 .scoreboard thead {
   background-color: #f0f0f0 !important;
 }
-.scoreboard tbody tr:nth-child(even) {
+.scoreboard tr:nth-child(even) {
   background-color: #fafafa !important;
+}
+
+/* ====================================
+   レスポンシブ対応（必要に応じて）
+==================================== */
+@media (max-width: 768px) {
+  .game-report {
+    padding: 12px;
+    margin: 12px auto;
+  }
+  .game-header h1 {
+    font-size: 1.3rem;
+  }
 }

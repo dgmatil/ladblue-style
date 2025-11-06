@@ -99,3 +99,26 @@ a[style*="padding"] {
     font-size: 1.3rem;
   }
 }
+
+.scoreboard {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+.scoreboard table {
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+.scoreboard th:first-child {
+  border-top-left-radius: 6px !important;
+}
+.scoreboard th:last-child {
+  border-top-right-radius: 6px !important;
+}
+.scoreboard tr:last-child td:first-child {
+  border-bottom-left-radius: 6px !important;
+}
+.scoreboard tr:last-child td:last-child {
+  border-bottom-right-radius: 6px !important;
+}

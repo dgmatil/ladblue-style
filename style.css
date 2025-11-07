@@ -131,7 +131,6 @@ a[style*="padding"] {
   border-top: 1px solid #ddd;
   background: #f9f9f9;
 }
-.site-footer a {
-  color: #005A9C;
-  text-decoration: none;
+.site-footer {
+  text-align: center !important;
 }

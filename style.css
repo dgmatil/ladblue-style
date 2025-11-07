@@ -123,4 +123,14 @@ a[style*="padding"] {
     font-size: 1.3rem;
   }
 
+.site-footer {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+}
 

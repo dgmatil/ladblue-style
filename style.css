@@ -7,6 +7,21 @@ html, body {
   letter-spacing: 0.01em !important; /* 修正 */
   font-variant-ligatures: none;
 }
+body,
+p,
+li,
+td,
+th {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 400;
+}
+.sidebar h2,
+.sidebar .widget-title,
+.widget .title,
+.widget h2 {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 400;
+}
 img, .separator img, a img {
   display: block;
   margin: 0 auto;
@@ -228,6 +243,7 @@ html, body {
 .post-body span[style*="font-size: x-small;"] {
   font-size: small !important;
 }
+
 
 
 

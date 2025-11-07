@@ -122,18 +122,3 @@ a[style*="padding"] {
   .game-header h1 {
     font-size: 1.3rem;
   }
-
-.site-footer {
-  display: block !important;
-  width: 960px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center !important;
-  padding: 24px 0 !important;
-  font-size: 0.85rem !important;
-  color: #666 !important;
-  border-top: 1px solid #ddd !important;
-  background: #f9f9f9 !important;
-  clear: both !important;
-}
-

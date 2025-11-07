@@ -122,10 +122,9 @@ a[style*="padding"] {
   .game-header h1 {
     font-size: 1.3rem;
   }
-}
 
-.site-footer {
-  text-align: center;
+   .site-footer {
+  text-align: center !important;
   font-size: 0.85rem;
   color: #666;
   padding: 24px 0;

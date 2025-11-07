@@ -1,6 +1,12 @@
 /* ====================================
    基本設定（フォント・本文・画像）
 ==================================== */
+.post-title,
+.entry-title,
+h3.post-title {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 500 !important;
+}
 .post-body [style*="font-family"] {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
   font-weight: 400 !important;
@@ -247,6 +253,7 @@ html, body {
 .post-body span[style*="font-size: x-small;"] {
   font-size: small !important;
 }
+
 
 
 

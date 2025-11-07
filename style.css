@@ -225,3 +225,7 @@ html, body {
   /* これが「リンクと間違われない」ために非常に重要です */
   cursor: default; 
 }
+
+.post-body span[style*="font-size: x-small;"] {
+  font-size: small !important;
+}

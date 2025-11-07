@@ -126,12 +126,14 @@ a[style*="padding"] {
 .site-footer {
   display: block !important;
   width: 960px !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-align: center !important;
-  padding: 24px 0;
-  font-size: 0.85rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-  background: #f9f9f9;
-  clear: both;
+  padding: 24px 0 !important;
+  font-size: 0.85rem !important;
+  color: #666 !important;
+  border-top: 1px solid #ddd !important;
+  background: #f9f9f9 !important;
+  clear: both !important;
 }
+

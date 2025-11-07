@@ -2,11 +2,10 @@
    基本設定（フォント・本文・画像）
 ==================================== */
 html, body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 16px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01em !important; /* 修正 */
   font-variant-ligatures: none;
-  color: #222;
 }
 img, .separator img, a img {
   display: block;
@@ -229,6 +228,7 @@ html, body {
 .post-body span[style*="font-size: x-small;"] {
   font-size: small !important;
 }
+
 
 
 

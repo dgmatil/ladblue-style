@@ -192,14 +192,8 @@ a[style*="padding"] {
 
 hr {
   border: none;
-  height: 3px;
-  background: linear-gradient(to right, #ccc, #ddd);
-  border-radius: 3px;
-  margin: 30px auto;
-  width: 100% !important;
-  display: block;
-  box-sizing: border-box;
-  max-width: 100%;
+  border-top: 1px solid #ccc;
+  margin: 0.2em 0 1.5em; /* ← 上の余白を0.2emに変更 */
 }
 
 .post-divider {
@@ -269,6 +263,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -179,6 +179,30 @@ section td {
   color: #444;
 }
 
+.player-inline {
+  font-size: 0; /* インラインブロックの隙間対策 */
+  margin-bottom: 2em;
+}
+
+.player-inline .player-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  font-size: 1rem;
+}
+
+.player-inline .player-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5em;
+}
+
+.player-inline .player-box li {
+  margin-bottom: 0.4em;
+  font-size: 0.95em;
+  color: #444;
+}
+
 .atbat-block,
 .pitcher-block {
   flex: 1 1 300px;
@@ -326,6 +350,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

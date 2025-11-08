@@ -193,7 +193,7 @@ section td {
 
 .player-inline .player-box ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -362,6 +362,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

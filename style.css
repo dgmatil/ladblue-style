@@ -20,14 +20,13 @@
 
 .scoreboard table {
   width: 100%;
-  max-width: 700px;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 15px;
   margin: 0 auto;
   border: none;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
+
 
 .scoreboard th,
 .scoreboard td {
@@ -212,3 +211,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

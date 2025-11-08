@@ -62,6 +62,22 @@
   font-weight: bold;
 }
 
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+}
+
+section th,
+section td {
+  border: 1px solid #bbb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
 /* ====================================
    基本設定（フォント・画像・装飾）
 ==================================== */
@@ -194,3 +210,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

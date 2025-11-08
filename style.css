@@ -7,14 +7,13 @@
 
 .scoreboard-wrapper {
   border-radius: 6px;
-  overflow-x: visible;
+  overflow-x: visible; /* PCではスクロールなし */
 }
 
 .scoreboard table {
   border-collapse: separate;
   border-spacing: 0;
   font-size: 15px;
-  min-width: 960px;
   width: 100%;
   border-radius: 6px;
   overflow: visible;
@@ -50,6 +49,17 @@
 .scoreboard td:nth-child(11),
 .scoreboard th:nth-child(11) {
   font-weight: bold;
+}
+
+/* ✅ スマホ・タブレットのみスクロール対応 */
+@media (max-width: 960px) {
+  .scoreboard-wrapper {
+    overflow-x: auto;
+  }
+
+  .scoreboard table {
+    min-width: 960px;
+  }
 }
 
 /* ====================================
@@ -301,3 +311,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

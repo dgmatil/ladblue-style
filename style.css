@@ -1,5 +1,184 @@
 /* ====================================
-   基本設定（フォント・本文・画像）
+   スコアボード（Picture Window対応）
+==================================== */
+.scoreboard {
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.scoreboard table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  min-width: 720px;
+}
+
+.scoreboard thead {
+  background-color: #f0f0f0 !important;
+}
+
+.scoreboard tbody td {
+  background-color: #fafafa !important;
+}
+
+.scoreboard tbody td:first-child {
+  background-color: #fafafa !important;
+}
+
+.scoreboard th,
+.scoreboard td {
+  border: 1px solid #ccc !important;
+  padding: 8px !important;
+  text-align: center !important;
+}
+
+.scoreboard tr:nth-child(even) td {
+  background-color: #fafafa !important;
+}
+
+.scoreboard th:first-child {
+  border-top-left-radius: 6px !important;
+}
+.scoreboard th:last-child {
+  border-top-right-radius: 6px !important;
+}
+.scoreboard tr:last-child td:first-child {
+  border-bottom-left-radius: 6px !important;
+}
+.scoreboard tr:last-child td:last-child {
+  border-bottom-right-radius: 6px !important;
+}
+
+/* R列（総得点）強調 */
+.scoreboard td:nth-child(11),
+.scoreboard th:nth-child(11) {
+  background-color: #fafafa !important;
+  font-weight: bold !important;
+}
+
+/* ====================================
+   ドジャース成績
+==================================== */
+.dodgers-stats {
+  margin-bottom: 2em;
+}
+
+.dodgers-stats h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans JP';
+}
+
+.dodgers-stats table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Noto Sans JP';
+}
+
+.dodgers-stats th,
+.dodgers-stats td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+/* ====================================
+   選手成績（大谷・山本・佐々木）
+==================================== */
+.ohtani-stats,
+.yamamoto-stats,
+.sasaki-stats {
+  margin-bottom: 2em;
+}
+
+.ohtani-stats h2,
+.yamamoto-stats h2,
+.sasaki-stats h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans JP';
+}
+
+.ohtani-stats table,
+.yamamoto-stats table,
+.sasaki-stats table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Noto Sans JP';
+}
+
+.ohtani-stats th, .ohtani-stats td,
+.yamamoto-stats th, .yamamoto-stats td,
+.sasaki-stats th, .sasaki-stats td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+/* ====================================
+   次戦情報
+==================================== */
+.next-game {
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.next-game h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans JP';
+}
+
+.next-game ul {
+  padding-left: 1em;
+  list-style: disc;
+  font-family: 'Noto Sans JP';
+}
+
+/* ====================================
+   汎用構造（section・table・見出し）
+==================================== */
+section {
+  margin-bottom: 2em;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans JP';
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Noto Sans JP';
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+/* ====================================
+   基本設定（フォント・画像・装飾）
 ==================================== */
 html, body {
   font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -59,125 +238,27 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
-/* ====================================
-   投稿テンプレート構造
-==================================== */
-section,
-.dodgers-stats,
-.ohtani-stats,
-.yamamoto-stats,
-.sasaki-stats {
-  margin-bottom: 2em;
-}
-
-section h2,
-.dodgers-stats h2,
-.ohtani-stats h2,
-.yamamoto-stats h2,
-.sasaki-stats h2,
-.next-game h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Noto Sans JP';
-}
-
-table,
-.dodgers-stats table,
-.ohtani-stats table,
-.yamamoto-stats table,
-.sasaki-stats table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 5px;
-  overflow: hidden;
-  font-family: 'Noto Sans JP';
-}
-
-th, td,
-.dodgers-stats th, .dodgers-stats td,
-.ohtani-stats th, .ohtani-stats td,
-.yamamoto-stats th, .yamamoto-stats td,
-.sasaki-stats th, .sasaki-stats td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
-.next-game ul {
-  padding-left: 1em;
-  list-style: disc;
-  font-family: 'Noto Sans JP';
-}
-
-/* ====================================
-   スコアボード（Picture Window対応）
-==================================== */
-.scoreboard {
-  overflow: hidden;
-  border-radius: 6px;
-  margin: 16px 0;
-}
-
-.scoreboard table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #ccc, #ddd);
+  border-radius: 3px;
+  margin: 30px auto;
   width: 100% !important;
-  font-size: 15px !important;
-  border-radius: 6px !important;
-  overflow: hidden !important;
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-.scoreboard th,
-.scoreboard td {
-  border: 1px solid #ccc !important;
-  padding: 8px !important;
-  text-align: center !important;
+.post-divider {
+  border-top: 1px dashed #e6eef9;
+  margin: 20px 0;
 }
 
-.scoreboard thead {
-  background-color: #f0f0f0 !important;
-}
-
-.scoreboard tr:nth-child(even) {
-  background-color: #fafafa !important;
-}
-
-.scoreboard th:first-child {
-  border-top-left-radius: 6px !important;
-}
-.scoreboard th:last-child {
-  border-top-right-radius: 6px !important;
-}
-.scoreboard tr:last-child td:first-child {
-  border-bottom-left-radius: 6px !important;
-}
-.scoreboard tr:last-child td:last-child {
-  border-bottom-right-radius: 6px !important;
-}
-.scoreboard thead {
-  background-color: #f0f0f0 !important;
-}
-
-.scoreboard tbody td {
-  background-color: #fafafa !important;
-}
-
-.scoreboard tbody td:first-child {
-  background-color: #fafafa !important; /* チーム名セルも同じ背景色に */
-}
-
-/* ====================================
-   レスポンシブ対応
-==================================== */
-@media (max-width: 768px) {
-  .game-report {
-    padding: 12px;
-    margin: 12px auto;
-  }
-  .game-header h1 {
-    font-size: 1.3rem;
-  }
+.dotted-underline {
+  border-bottom: 1px dotted #333333;
+  text-decoration: none;
+  cursor: default;
 }
 
 /* ====================================
@@ -207,43 +288,11 @@ kbd {
   min-width: 1em;
 }
 
-hr {
-  border: none;
-  height: 3px;
-  background: linear-gradient(to right, #ccc, #ddd);
-  border-radius: 3px;
-  margin: 30px auto;
-  width: 100% !important;
-  display: block;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-.post-divider {
-  border-top: 1px dashed #e6eef9;
-  margin: 20px 0;
-}
-
-.dotted-underline {
-  border-bottom: 1px dotted #333333;
-  text-decoration: none;
-  cursor: default;
-}
-
-/* R列（総得点）の背景色と太字 */
-.scoreboard td:nth-child(11),
-.scoreboard th:nth-child(11) {
-  background-color: #fafafa !important;
-  font-weight: bold !important;
-}
-
-/* スコアボードの横スクロール対応（スマホ） */
+/* ====================================
+   レスポンシブ対応（最後尾）
+==================================== */
 @media (max-width: 768px) {
-  .scoreboard {
-    overflow-x: auto;
-  }
-
-  .scoreboard table {
-    min-width: 720px; /* 表がはみ出す幅を確保 */
-  }
-}
+  .game-report {
+    padding: 12px;
+    margin: 12px auto;
+ 

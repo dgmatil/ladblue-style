@@ -53,10 +53,19 @@
   border-bottom-right-radius: 6px !important;
 }
 
-/* R列（総得点）強調 */
+/* R・H・E列の背景色統一 */
+.scoreboard td:nth-child(11),
+.scoreboard td:nth-child(12),
+.scoreboard td:nth-child(13),
+.scoreboard th:nth-child(11),
+.scoreboard th:nth-child(12),
+.scoreboard th:nth-child(13) {
+  background-color: #fafafa !important;
+}
+
+/* R列太字（維持） */
 .scoreboard td:nth-child(11),
 .scoreboard th:nth-child(11) {
-  background-color: #fafafa !important;
   font-weight: bold !important;
 }
 
@@ -296,3 +305,4 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+

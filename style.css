@@ -16,7 +16,13 @@
   border: thin solid #bbb;
 }
 .scoreboard table {
-  border: thin solid #bbb;
+  border: 1px solid #bbb; /* ← 外枠の線を明示的に指定 */
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 15px;
+  overflow: visible;
 }
 
 /* 左上・右上の角丸 */
@@ -311,6 +317,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

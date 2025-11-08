@@ -4,7 +4,7 @@
 .scoreboard-wrapper {
   overflow-x: auto;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  box-shadow: 0 0 0 1px #ccc;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -13,13 +13,9 @@
 }
 
 .scoreboard {
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
   width: 100%;
-  font-size: 15px;
-  margin: 0;
   border: none;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
@@ -211,3 +207,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

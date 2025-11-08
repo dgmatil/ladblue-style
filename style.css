@@ -57,6 +57,22 @@
 .scoreboard th:nth-child(11) {
   font-weight: bold;
 }
+
+/* 通常表示（PCなど）ではスクロールバーを出さない */
+.scoreboard-wrapper {
+  overflow-x: visible;
+}
+
+/* スマホ表示のみスクロールバーを有効化 */
+@media (max-width: 768px) {
+  .scoreboard-wrapper {
+    overflow-x: auto;
+  }
+
+  .scoreboard table {
+    min-width: 960px;
+  }
+}
 /* ====================================
    ドジャース成績
 ==================================== */
@@ -293,6 +309,7 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 
 
 

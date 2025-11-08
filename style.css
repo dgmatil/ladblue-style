@@ -1,5 +1,5 @@
 /* ====================================
-   スコアボード（stopneko風・完全調整）
+   スコアボード（完全安定構成）
 ==================================== */
 .scoreboard-wrapper {
   overflow-x: auto;
@@ -9,12 +9,13 @@
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .scoreboard {
-  border-collapse: collapse;
-  width: max-content;
-  min-width: 720px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
   font-size: 15px;
   margin: 0;
   border: none;
@@ -26,8 +27,8 @@
   border: 1px solid #ccc;
   padding: 6px 10px;
   text-align: center;
+  background-clip: padding-box;
 }
-
 
 .scoreboard th {
   background-color: #D1D1D1;
@@ -210,4 +211,3 @@ kbd {
     font-size: 1.3rem;
   }
 }
-

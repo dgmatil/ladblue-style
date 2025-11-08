@@ -113,6 +113,15 @@
 /* ====================================
    成績表（共通テーブルスタイル）
 ==================================== */
+
+.section-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.6em; /* ← 1em → 0.6em に減らす */
+  color: #333;
+}
+
 section table {
   width: 100%;
   border-collapse: collapse;
@@ -207,14 +216,6 @@ hr {
   cursor: default;
 }
 
-.section-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 0.6em; /* ← 1em → 0.6em に減らす */
-  color: #333;
-}
-
 /* ====================================
    stopneko レガシー１
 ==================================== */
@@ -263,6 +264,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -7,38 +7,33 @@
 
 /* デフォルト（PC）ではスクロール不要にする */
 .scoreboard-wrapper {
-  overflow-x: visible;
+  overflow-x: auto;
+  border-radius: 6px;
 }
 
 .scoreboard table {
-  width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 15px;
-  border-radius: 6px;
+  min-width: 960px;
   overflow: visible;
-}
-.scoreboard thead {
-  background-color: #f0f0f0;
+  width: 100%;
 }
 
-.scoreboard th,
-.scoreboard td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
+/* 左上・右上の角丸 */
+.scoreboard thead th:first-child {
+  border-top-left-radius: 6px;
+}
+.scoreboard thead th:last-child {
+  border-top-right-radius: 6px;
 }
 
-.scoreboard tbody td {
-  background-color: #fafafa;
+/* 左下・右下の角丸 */
+.scoreboard tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
 }
-
-.scoreboard tbody td:first-child {
-  background-color: #fafafa;
-}
-
-.scoreboard tr:nth-child(even) td {
-  background-color: #fafafa;
+.scoreboard tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
 }
 
 /* R・H・E列の背景色統一 */
@@ -307,6 +302,7 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 
 
 

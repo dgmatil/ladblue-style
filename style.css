@@ -14,9 +14,11 @@
   border-collapse: separate;
   border-spacing: 0;
   font-size: 15px;
+  min-width: 960px;
   width: 100%;
   border-radius: 6px;
   overflow: visible;
+  border: 1px solid #ccc; /* ← 外枠の線を追加！ */
 }
 
 /* 左上・右上の角丸 */
@@ -311,4 +313,5 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 

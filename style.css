@@ -3,20 +3,15 @@
 ==================================== */
 .scoreboard-wrapper {
   overflow-x: auto;
-  padding: 0;
-}
-
-.scoreboard-frame {
   border-radius: 6px;
   border: 1px solid #ccc;
-  overflow: hidden;
-  display: inline-block;
-  min-width: 700px;
+  padding: 0;
 }
 
 .scoreboard {
   border-collapse: collapse;
   width: 100%;
+  min-width: 700px;
   font-size: 15px;
   margin: 0;
   border: none;
@@ -53,6 +48,7 @@
     font-size: 12px;
   }
 }
+
 
 
 
@@ -208,6 +204,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

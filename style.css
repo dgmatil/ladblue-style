@@ -2,7 +2,7 @@
    スコアボード（Picture Window対応）
 ==================================== */
 .scoreboard {
-  overflow-x: auto; /* ← 横スクロール対応 */
+  overflow-x: auto; /* ← 横スクロールを有効化 */
   border-radius: 6px;
   margin: 16px 0;
 }
@@ -13,10 +13,9 @@
   width: 100% !important;
   font-size: 15px !important;
   border-radius: 6px !important;
-  overflow: visible !important; /* ← hiddenを解除 */
-  min-width: 960px; /* ← 13列以上に対応 */
+  overflow: visible !important;
+  min-width: 960px; /* ← 13列対応 */
 }
-
 .scoreboard thead {
   background-color: #f0f0f0 !important;
 }
@@ -68,7 +67,13 @@
 .scoreboard th:nth-child(11) {
   font-weight: bold !important;
 }
+.post-body .scoreboard {
+  overflow-x: auto;
+}
 
+.post-body .scoreboard table {
+  min-width: 960px;
+}
 /* ====================================
    ドジャース成績
 ==================================== */
@@ -305,5 +310,6 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 
 

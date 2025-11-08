@@ -1,6 +1,11 @@
 /* ====================================
    スコアボード（scoreboard-frame構造・最終調整）
 ==================================== */
+.scoreboard {
+  margin: 16px 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
 .scoreboard-wrapper {
   overflow-x: auto;
   width: 100%;
@@ -9,26 +14,24 @@
 .scoreboard-frame {
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #e0e0e0;
-  display: inline-block;
-  width: fit-content;
-  min-width: 100%;
+  display: block;
+  width: max-content; /* ← スクロール領域を広げる */
 }
 
 .scoreboard table {
-  min-width: 700px;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 15px;
-  border: none;
-  width: 100%;
+  min-width: 700px; /* ← スコアボード全体を表示 */
   margin: 0;
+  border: 1px solid #ccc; /* ← 外枠線をtableに持たせる */
+  border-radius: 6px;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ccc;
   padding: 6px 10px;
   text-align: center;
 }
@@ -56,6 +59,7 @@
     font-size: 12px;
   }
 }
+
 
 
 /* ====================================
@@ -209,5 +213,6 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 

@@ -1,5 +1,5 @@
 /* ====================================
-   スコアボード（Picture Window対応）
+   スコアボード（ranking_table風デザイン）
 ==================================== */
 .scoreboard {
   margin: 16px 0;
@@ -12,52 +12,42 @@
 }
 
 .scoreboard table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  border: 1px solid #bbb !important;
-  border-radius: 6px !important;
-  width: 100% !important;
-  font-size: 15px !important;
-  overflow: visible !important;
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #bbb !important;
-  padding: 8px !important;
-  text-align: center !important;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: center;
 }
 
-/* 左上・右上の角丸 */
-.scoreboard thead th:first-child {
-  border-top-left-radius: 6px;
-}
-.scoreboard thead th:last-child {
-  border-top-right-radius: 6px;
+.scoreboard th {
+  color: #444444;
+  background-color: #D1D1D1;
 }
 
-/* 左下・右下の角丸 */
-.scoreboard tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
-}
-.scoreboard tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
+.scoreboard td:first-child {
+  background-color: #f5f5f5;
 }
 
-/* R・H・E列の背景色統一 */
-.scoreboard td:nth-child(11),
-.scoreboard td:nth-child(12),
-.scoreboard td:nth-child(13),
-.scoreboard th:nth-child(11),
-.scoreboard th:nth-child(12),
-.scoreboard th:nth-child(13) {
-  background-color: #fafafa;
+.scoreboard td:nth-child(2) {
+  font-weight: normal;
 }
 
-/* R列太字 */
-.scoreboard td:nth-child(11),
-.scoreboard th:nth-child(11) {
-  font-weight: bold;
+@media screen and (max-width: 600px) {
+  .scoreboard table {
+    font-size: 12px;
+  }
 }
 
 /* ====================================
@@ -211,6 +201,3 @@ kbd {
     font-size: 1.3rem;
   }
 }
-
-
-

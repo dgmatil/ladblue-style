@@ -10,23 +10,22 @@
   border-radius: 6px;
   overflow-x: auto;
   overflow: hidden;
-  border: 0.5px solid #e5e5e5;
+  /* 外枠線は table に移すので border は削除 */
 }
 
 .scoreboard table {
   width: 100%;
   max-width: 700px;
   border-collapse: collapse;
-  border-spacing: 0;
+  border: 1px solid #ccc; /* 外枠線をここに */
   font-size: 15px;
   margin: 0 auto;
-  border: none;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 0.5px solid #e5e5e5;
+  border: 1px solid #ccc; /* 内枠線と統一 */
   padding: 6px 10px;
   text-align: center;
 }
@@ -55,6 +54,7 @@
     font-size: 12px;
   }
 }
+
 
 
 /* ====================================
@@ -208,4 +208,5 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 

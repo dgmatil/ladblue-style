@@ -79,10 +79,10 @@
   margin-left: 0px; /* ← 完全に詰めて一体化 */
 }
 
-.inline-parens {
+.align-the-height {
   font-size: 1em;
   position: relative;
-  top: -0.03em; /* ← 1px〜2px相当の微調整 */
+  top: -0.03em;
   letter-spacing: 0.01em;
 }
 
@@ -239,6 +239,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -2,54 +2,44 @@
    スコアボード（Picture Window対応）
 ==================================== */
 .scoreboard {
-  overflow-x: auto; /* ← 横スクロールを有効化 */
-  border-radius: 6px;
   margin: 16px 0;
 }
 
+.scoreboard-wrapper {
+  overflow-x: auto;
+}
+
 .scoreboard table {
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  width: 100% !important;
-  font-size: 15px !important;
-  border-radius: 6px !important;
-  overflow: visible !important;
-  min-width: 960px; /* ← 13列対応 */
+  min-width: 960px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 15px;
+  border-radius: 6px;
+  overflow: visible;
 }
+
 .scoreboard thead {
-  background-color: #f0f0f0 !important;
-}
-
-.scoreboard tbody td {
-  background-color: #fafafa !important;
-}
-
-.scoreboard tbody td:first-child {
-  background-color: #fafafa !important;
+  background-color: #f0f0f0;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc !important;
-  padding: 8px !important;
-  text-align: center !important;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.scoreboard tbody td {
+  background-color: #fafafa;
+}
+
+.scoreboard tbody td:first-child {
+  background-color: #fafafa;
 }
 
 .scoreboard tr:nth-child(even) td {
-  background-color: #fafafa !important;
-}
-
-.scoreboard th:first-child {
-  border-top-left-radius: 6px !important;
-}
-.scoreboard th:last-child {
-  border-top-right-radius: 6px !important;
-}
-.scoreboard tr:last-child td:first-child {
-  border-bottom-left-radius: 6px !important;
-}
-.scoreboard tr:last-child td:last-child {
-  border-bottom-right-radius: 6px !important;
+  background-color: #fafafa;
 }
 
 /* R・H・E列の背景色統一 */
@@ -59,20 +49,13 @@
 .scoreboard th:nth-child(11),
 .scoreboard th:nth-child(12),
 .scoreboard th:nth-child(13) {
-  background-color: #fafafa !important;
+  background-color: #fafafa;
 }
 
-/* R列太字（維持） */
+/* R列太字 */
 .scoreboard td:nth-child(11),
 .scoreboard th:nth-child(11) {
-  font-weight: bold !important;
-}
-.post-body .scoreboard {
-  overflow-x: auto;
-}
-
-.post-body .scoreboard table {
-  min-width: 960px;
+  font-weight: bold;
 }
 /* ====================================
    ドジャース成績
@@ -310,6 +293,7 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 
 
 

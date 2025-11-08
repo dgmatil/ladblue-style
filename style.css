@@ -163,6 +163,8 @@ section td {
 .player-box {
   flex: 1 1 300px;
   min-width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .player-box ul {
@@ -288,6 +290,7 @@ hr {
   color: #333333;
   border-bottom: 0px solid #676767;
   display: inline-block;
+  margin-bottom: 0.5em;
 }
 
 kbd {
@@ -323,6 +326,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

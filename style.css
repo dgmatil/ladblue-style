@@ -15,7 +15,7 @@
   border-collapse: collapse;
   width: max-content;
   font-size: 15px;
-  margin: 0;
+  margin: 0 auto;
   border: none;
   border-radius: 6px;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
@@ -34,11 +34,23 @@
 }
 
 .scoreboard td:first-child {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
 }
 
 /* ✅ 左下角丸対策：最終行の左端セルだけ背景色を透明に */
 .scoreboard tbody tr:last-child td:first-child {
+  background-color: transparent;
+}
+
+/* ✅ 表中央寄せ＋スクロールバーと一致 */
+.scoreboard-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.scoreboard-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.scoreboard-wrapper::-webkit-scrollbar-track {
   background-color: transparent;
 }
 

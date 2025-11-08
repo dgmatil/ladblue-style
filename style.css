@@ -18,13 +18,13 @@
   width: 100%;
   border-radius: 6px;
   overflow: visible;
-  border: 1px solid #ccc;
+  border: 0.8px solid #bbb;
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc;
+  border: 0.8px solid #bbb;
   padding: 8px;
   text-align: center;
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
@@ -322,6 +322,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

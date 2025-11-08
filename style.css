@@ -1,17 +1,19 @@
 /* ====================================
-   スコアボード 17:12pm
+   スコアボード
 ==================================== */
 .scoreboard-wrapper {
   overflow-x: auto;
   border-radius: 6px;
   border: 1px solid #ccc;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .scoreboard {
   border-collapse: collapse;
+  min-width: 720px; /* ← スコアボード全体を表示 */
   width: 100%;
-  min-width: 700px;
   font-size: 15px;
   margin: 0;
   border: none;
@@ -48,6 +50,7 @@
     font-size: 12px;
   }
 }
+
 
 
 
@@ -204,6 +207,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

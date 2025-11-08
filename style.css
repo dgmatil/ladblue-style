@@ -155,6 +155,17 @@ th, td,
 .scoreboard tr:last-child td:last-child {
   border-bottom-right-radius: 6px !important;
 }
+.scoreboard thead {
+  background-color: #f0f0f0 !important;
+}
+
+.scoreboard tbody td {
+  background-color: #fafafa !important;
+}
+
+.scoreboard tbody td:first-child {
+  background-color: #fafafa !important; /* チーム名セルも同じ背景色に */
+}
 
 /* ====================================
    レスポンシブ対応
@@ -217,4 +228,22 @@ hr {
   border-bottom: 1px dotted #333333;
   text-decoration: none;
   cursor: default;
+}
+
+/* R列（総得点）の背景色と太字 */
+.scoreboard td:nth-child(11),
+.scoreboard th:nth-child(11) {
+  background-color: #fafafa !important;
+  font-weight: bold !important;
+}
+
+/* スコアボードの横スクロール対応（スマホ） */
+@media (max-width: 768px) {
+  .scoreboard {
+    overflow-x: auto;
+  }
+
+  .scoreboard table {
+    min-width: 720px; /* 表がはみ出す幅を確保 */
+  }
 }

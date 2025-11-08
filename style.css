@@ -8,24 +8,24 @@
 
 .scoreboard-wrapper {
   border-radius: 6px;
-  overflow-x: auto;
   overflow: hidden;
-  /* 外枠線は table に移すので border は削除 */
+  border: 1px solid #ccc; /* 外枠線をここに集約 */
 }
 
 .scoreboard table {
   width: 100%;
   max-width: 700px;
   border-collapse: collapse;
-  border: 1px solid #ccc; /* 外枠線をここに */
+  border-spacing: 0;
   font-size: 15px;
   margin: 0 auto;
+  border: none; /* ← table側の枠線を完全に削除 */
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc; /* 内枠線と統一 */
+  border: 1px solid #ccc; /* 内側罫線のみ */
   padding: 6px 10px;
   text-align: center;
 }
@@ -54,6 +54,7 @@
     font-size: 12px;
   }
 }
+
 
 
 
@@ -208,5 +209,6 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 

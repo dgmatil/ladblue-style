@@ -1,5 +1,5 @@
 /* ====================================
-   スコアボード（ranking_table風・微調整済み）
+   スコアボード（ranking_table風・最終調整）
 ==================================== */
 .scoreboard {
   margin: 16px 0;
@@ -9,7 +9,6 @@
 .scoreboard-wrapper {
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #ccc; /* 外枠線をここに集約 */
 }
 
 .scoreboard table {
@@ -19,13 +18,14 @@
   border-spacing: 0;
   font-size: 15px;
   margin: 0 auto;
-  border: none; /* ← table側の枠線を完全に削除 */
+  border: 1px solid #ccc; /* 外枠線をtableに統一 */
+  border-radius: 6px;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc; /* 内側罫線のみ */
+  border: 1px solid #ccc; /* 内枠線と統一 */
   padding: 6px 10px;
   text-align: center;
 }
@@ -54,9 +54,6 @@
     font-size: 12px;
   }
 }
-
-
-
 
 /* ====================================
    成績表（共通テーブルスタイル）
@@ -209,6 +206,3 @@ kbd {
     font-size: 1.3rem;
   }
 }
-
-
-

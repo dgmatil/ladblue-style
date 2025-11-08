@@ -317,6 +317,18 @@ hr {
   margin-bottom: 0.5em;
 }
 
+.menuLineLightW.sub {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 1px 0px 8px;
+  border-width: 0px 0px 1px 9px;
+  border-color: #E0E0E0; /* ← 親より薄く */
+  border-style: solid;
+  background: white;
+  color: #333333;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
 kbd {
   background-color: #dddddd;
   padding: 0 2px;
@@ -350,6 +362,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

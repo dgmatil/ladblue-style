@@ -1,32 +1,30 @@
 /* ====================================
    スコアボード（scoreboard-frame構造・最終調整）
 ==================================== */
-.scoreboard {
-  margin: 16px 0;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
-}
-
 .scoreboard-wrapper {
   overflow-x: auto;
+  width: 100%;
 }
 
 .scoreboard-frame {
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #e0e0e0;
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: fit-content;
+  min-width: 100%;
 }
 
 .scoreboard table {
-  width: 100%;
+  min-width: 700px;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 15px;
-  margin: 0 auto;
   border: none;
+  width: 100%;
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
-
 
 .scoreboard th,
 .scoreboard td {
@@ -48,7 +46,6 @@
   font-weight: normal;
 }
 
-/* R列太字 */
 .scoreboard th:nth-child(11),
 .scoreboard td:nth-child(11) {
   font-weight: bold;
@@ -59,6 +56,7 @@
     font-size: 12px;
   }
 }
+
 
 /* ====================================
    成績表（共通テーブルスタイル）
@@ -211,4 +209,5 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 

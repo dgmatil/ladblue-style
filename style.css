@@ -138,6 +138,20 @@ section td {
   text-align: left;
 }
 
+.atbat-list,
+.pitcher-stats {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.atbat-list li,
+.pitcher-stats li {
+  margin-bottom: 0.4em;
+  font-size: 0.95em;
+  color: #444;
+}
+
 /* ====================================
    基本設定（フォント・画像・装飾・仕切り線）
 ==================================== */
@@ -264,6 +278,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

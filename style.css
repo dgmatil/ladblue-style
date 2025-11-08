@@ -79,11 +79,13 @@
   letter-spacing: 0.03em;
 }
 
-.day-wrap {
-  font-size: 0.95em;
+.inline-parens {
+  font-size: 1em;
   position: relative;
-  top: -0.1em;
+  top: -0.03em; /* ← 1px〜2px相当の微調整 */
+  letter-spacing: 0.01em;
 }
+
 
 
 /* ====================================
@@ -237,6 +239,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

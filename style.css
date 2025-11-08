@@ -86,6 +86,28 @@
   letter-spacing: 0.01em;
 }
 
+.link-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.link-list li {
+  margin-bottom: 1.5em;
+}
+
+.link-list strong {
+  font-size: 1em;
+  color: #222;
+}
+
+.link-comment {
+  font-size: 0.9em;
+  color: #666;
+  display: block;
+  margin: 0.2em 0 0.4em;
+}
+
 
 
 /* ====================================
@@ -108,7 +130,7 @@ section td {
 }
 
 /* ====================================
-   基本設定（フォント・画像・装飾）
+   基本設定（フォント・画像・装飾・仕切り線）
 ==================================== */
 html, body {
   font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -189,6 +211,14 @@ hr {
   border-bottom: 1px dotted #333333;
   text-decoration: none;
   cursor: default;
+}
+
+.section-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 1em; /* ← 0.5em → 1em に変更 */
+  color: #333;
 }
 
 /* ====================================

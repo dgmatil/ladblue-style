@@ -170,7 +170,7 @@ section td {
 .player-box ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 
 .player-box li {
@@ -326,6 +326,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -9,16 +9,15 @@
   margin: 0;
   width: 100%;
   box-sizing: border-box;
-  display: block;
 }
 
 .scoreboard {
   border-collapse: collapse;
-  width: 100%;
+  width: max-content;
+  min-width: 720px;
   font-size: 15px;
   margin: 0;
-  border: none; /* ✅ 外枠線を完全に排除 */
-  border-radius: 0; /* ✅ 角丸は wrapper に集約 */
+  border: none;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
@@ -28,6 +27,7 @@
   padding: 6px 10px;
   text-align: center;
 }
+
 
 .scoreboard th {
   background-color: #D1D1D1;
@@ -210,3 +210,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

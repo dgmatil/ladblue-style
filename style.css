@@ -253,6 +253,36 @@ html, body {
 .post-body span[style*="font-size: x-small;"] {
   font-size: small !important;
 }
+section {
+  margin-bottom: 2em;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans JP';
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Noto Sans JP';
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.next-game ul {
+  padding-left: 1em;
+  list-style: disc;
+  font-family: 'Noto Sans JP';
+}
 
 
 

@@ -13,8 +13,9 @@
 .scoreboard-frame {
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  display: inline-block;
+  border: 1px solid #e0e0e0;
+  display: block;
+  width: 100%;
 }
 
 .scoreboard table {
@@ -30,7 +31,7 @@
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc;
+  border: 1px solid #e0e0e0;
   padding: 6px 10px;
   text-align: center;
 }

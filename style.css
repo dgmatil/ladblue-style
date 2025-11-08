@@ -9,7 +9,8 @@
 .scoreboard-wrapper {
   border-radius: 6px;
   overflow-x: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd; /* ← 線を薄く */
+  box-shadow: 0 0 0 0 transparent; /* ← 影なしを明示 */
 }
 
 .scoreboard table {
@@ -18,11 +19,12 @@
   border-collapse: collapse;
   font-size: 15px;
   margin: 0 auto;
+  border: none; /* ← table側の枠線を消す */
 }
 
 .scoreboard th,
 .scoreboard td {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd; /* ← 線を薄く */
   padding: 6px 10px;
   text-align: center;
 }
@@ -45,6 +47,7 @@
     font-size: 12px;
   }
 }
+
 
 
 
@@ -199,5 +202,6 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 

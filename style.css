@@ -4,7 +4,7 @@
 .scoreboard-wrapper {
   overflow-x: auto;
   border-radius: 6px;
-  box-shadow: 0 0 0 1px #ccc;
+  box-shadow: 0 0 0 1px #ccc; /* ✅ 外枠線を影で描画 */
   padding: 0;
   margin: 0;
   width: 100%;
@@ -207,4 +207,5 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 

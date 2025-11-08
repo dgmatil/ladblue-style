@@ -11,23 +11,20 @@
   overflow-x: visible;
 }
 
-.scoreboard table {
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 15px;
+section table {
   width: 100%;
-  border-radius: 6px;
-  overflow: visible;
+  border-collapse: collapse;
   border: 1px solid #bbb;
+  border-radius: 5px;
+  overflow: hidden;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
-.scoreboard th,
-.scoreboard td {
+section th,
+section td {
   border: 1px solid #bbb;
-  padding: 8px;
-  text-align: center;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  padding: 8px 12px;
+  text-align: left;
 }
 
 /* 左上・右上の角丸 */
@@ -213,3 +210,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

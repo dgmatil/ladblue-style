@@ -1,5 +1,5 @@
 /* ====================================
-   スコアボード（Picture Window対応！）
+   スコアボード（Picture Window対応）
 ==================================== */
 .scoreboard {
   margin: 16px 0;
@@ -62,13 +62,16 @@
   font-weight: bold;
 }
 
+/* ====================================
+   成績表（共通テーブルスタイル）
+==================================== */
 section table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #bbb;
   border-radius: 5px;
   overflow: hidden;
-  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 section th,
@@ -210,5 +213,3 @@ kbd {
     font-size: 1.3rem;
   }
 }
-
-

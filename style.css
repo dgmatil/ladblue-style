@@ -193,7 +193,7 @@ a[style*="padding"] {
 hr {
   border: none;
   border-top: 1px solid #ccc;
-  margin: 0.1em 0 1.5em; /* ← 上の余白を0.2emに変更 */
+  margin: 0.1em 0 1.5em; /* ← 上の余白はそのまま */
 }
 
 .post-divider {
@@ -211,7 +211,7 @@ hr {
   font-size: 1.1em;
   font-weight: bold;
   margin-top: 2em;
-  margin-bottom: 1em; /* ← 0.5em → 1em に変更 */
+  margin-bottom: 0.6em; /* ← 1em → 0.6em に減らす */
   color: #333;
 }
 
@@ -263,6 +263,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

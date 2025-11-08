@@ -8,19 +8,16 @@
 
 .scoreboard-wrapper {
   border-radius: 6px;
-  overflow-x: visible;
+  overflow-x: auto;
 }
 
 .scoreboard table {
   width: 100%;
   max-width: 700px;
-  border-collapse: collapse;
+  border-collapse: collapse; /* ← ここが重要！ */
   font-size: 15px;
   margin: 0 auto;
-  overflow-x: auto;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* ← 外枠線 */
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
@@ -49,6 +46,7 @@
     font-size: 12px;
   }
 }
+
 
 /* ====================================
    成績表（共通テーブルスタイル）
@@ -201,3 +199,4 @@ kbd {
     font-size: 1.3rem;
   }
 }
+

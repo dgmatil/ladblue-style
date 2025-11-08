@@ -9,16 +9,15 @@
 .scoreboard-wrapper {
   border-radius: 6px;
   overflow-x: auto;
+  border: 1px solid #ccc;
 }
 
 .scoreboard table {
   width: 100%;
   max-width: 700px;
-  border-collapse: collapse; /* ← ここが重要！ */
+  border-collapse: collapse;
   font-size: 15px;
   margin: 0 auto;
-  border: 1px solid #ccc; /* ← 外枠線 */
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
@@ -46,6 +45,7 @@
     font-size: 12px;
   }
 }
+
 
 
 /* ====================================
@@ -199,4 +199,5 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 

@@ -17,8 +17,8 @@
   width: 100%;
   font-size: 15px;
   margin: 0;
-  border: none;
-  border-radius: 6px;
+  border: none; /* ✅ 外枠線を完全に排除 */
+  border-radius: 0; /* ✅ 角丸は wrapper に集約 */
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 

@@ -5,12 +5,12 @@
   margin: 16px 0;
 }
 
+/* デフォルト（PC）ではスクロール不要にする */
 .scoreboard-wrapper {
-  overflow-x: auto;
+  overflow-x: visible;
 }
 
 .scoreboard table {
-  min-width: 960px;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -18,7 +18,6 @@
   border-radius: 6px;
   overflow: visible;
 }
-
 .scoreboard thead {
   background-color: #f0f0f0;
 }
@@ -62,9 +61,8 @@
 .scoreboard-wrapper {
   overflow-x: visible;
 }
-
-/* スマホ表示のみスクロールバーを有効化 */
-@media (max-width: 768px) {
+/* スマホ・タブレットのみスクロール対応 */
+@media (max-width: 960px) {
   .scoreboard-wrapper {
     overflow-x: auto;
   }
@@ -72,7 +70,7 @@
   .scoreboard table {
     min-width: 960px;
   }
-   
+
 /* ====================================
    ドジャース成績
 ==================================== */
@@ -309,6 +307,7 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 
 
 

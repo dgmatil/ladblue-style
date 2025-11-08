@@ -74,9 +74,9 @@
   font-size: 0.75em;
   color: #999;
   font-weight: bold;
-  margin-left: 4px;
   vertical-align: super;
   letter-spacing: 0.03em;
+  margin-left: 2px; /* ← ここを 2px に変更して左に詰める */
 }
 
 .inline-parens {
@@ -239,6 +239,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

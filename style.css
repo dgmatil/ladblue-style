@@ -2,7 +2,7 @@
    スコアボード（Picture Window対応）
 ==================================== */
 .scoreboard {
-  overflow: hidden;
+  overflow-x: auto; /* ← 横スクロール対応 */
   border-radius: 6px;
   margin: 16px 0;
 }
@@ -13,8 +13,8 @@
   width: 100% !important;
   font-size: 15px !important;
   border-radius: 6px !important;
-  overflow: hidden !important;
-  min-width: 720px;
+  overflow: visible !important; /* ← hiddenを解除 */
+  min-width: 960px; /* ← 13列以上に対応 */
 }
 
 .scoreboard thead {
@@ -305,4 +305,5 @@ kbd {
     padding: 12px;
     margin: 12px auto;
  
+
 

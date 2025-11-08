@@ -1,6 +1,68 @@
 /* ====================================
-   投稿テンプレート：選手成績セクション
+   基本設定（フォント・本文・画像）
 ==================================== */
+html, body {
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.01em !important;
+  font-variant-ligatures: none;
+}
+
+body, p, li, td, th {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 400;
+}
+
+.post-title,
+.entry-title,
+h3.post-title,
+.sidebar h2,
+.sidebar .widget-title,
+.widget .title,
+.widget h2 {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 500;
+}
+
+.post-body {
+  line-height: 1.7 !important;
+  overflow: visible !important;
+}
+
+.post-body [style*="font-family"] {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.post-body span[style*="font-size: x-small;"] {
+  font-size: small !important;
+}
+
+img, .separator img, a img {
+  display: block;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+
+.post-body img.center-img {
+  display: block;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.separator {
+  margin: 1em auto;
+  text-align: center;
+}
+
+a[style*="padding"] {
+  padding: 0 !important;
+}
+
+/* ====================================
+   投稿テンプレート構造
+==================================== */
+section,
 .dodgers-stats,
 .ohtani-stats,
 .yamamoto-stats,
@@ -8,16 +70,19 @@
   margin-bottom: 2em;
 }
 
+section h2,
 .dodgers-stats h2,
 .ohtani-stats h2,
 .yamamoto-stats h2,
-.sasaki-stats h2 {
+.sasaki-stats h2,
+.next-game h2 {
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 600;
   font-family: 'Noto Sans JP';
 }
 
+table,
 .dodgers-stats table,
 .ohtani-stats table,
 .yamamoto-stats table,
@@ -29,6 +94,7 @@
   font-family: 'Noto Sans JP';
 }
 
+th, td,
 .dodgers-stats th, .dodgers-stats td,
 .ohtani-stats th, .ohtani-stats td,
 .yamamoto-stats th, .yamamoto-stats td,
@@ -38,12 +104,117 @@
   text-align: left;
 }
 
-/* ====================================
-   次戦情報（.next-game）補強
-==================================== */
-.next-game h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
+.next-game ul {
+  padding-left: 1em;
+  list-style: disc;
   font-family: 'Noto Sans JP';
+}
+
+/* ====================================
+   スコアボード（Picture Window対応）
+==================================== */
+.scoreboard {
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.scoreboard table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  font-size: 15px !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+.scoreboard th,
+.scoreboard td {
+  border: 1px solid #ccc !important;
+  padding: 8px !important;
+  text-align: center !important;
+}
+
+.scoreboard thead {
+  background-color: #f0f0f0 !important;
+}
+
+.scoreboard tr:nth-child(even) {
+  background-color: #fafafa !important;
+}
+
+.scoreboard th:first-child {
+  border-top-left-radius: 6px !important;
+}
+.scoreboard th:last-child {
+  border-top-right-radius: 6px !important;
+}
+.scoreboard tr:last-child td:first-child {
+  border-bottom-left-radius: 6px !important;
+}
+.scoreboard tr:last-child td:last-child {
+  border-bottom-right-radius: 6px !important;
+}
+
+/* ====================================
+   レスポンシブ対応
+==================================== */
+@media (max-width: 768px) {
+  .game-report {
+    padding: 12px;
+    margin: 12px auto;
+  }
+  .game-header h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ====================================
+   stopneko レガシー
+==================================== */
+.menuLineLightW {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 1px 0px 8px;
+  border-width: 0px 0px 1px 9px;
+  border-color: #CCCCCC;
+  border-style: solid;
+  background: white;
+  color: #333333;
+  border-bottom: 0px solid #676767;
+  display: inline-block;
+}
+
+kbd {
+  background-color: #dddddd;
+  padding: 0 2px;
+  white-space: nowrap;
+  color: #000000;
+  outline: 1px solid #bbbbbb;
+  border: 1px solid #bbbbbb;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  min-width: 1em;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #ccc, #ddd);
+  border-radius: 3px;
+  margin: 30px auto;
+  width: 100% !important;
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.post-divider {
+  border-top: 1px dashed #e6eef9;
+  margin: 20px 0;
+}
+
+.dotted-underline {
+  border-bottom: 1px dotted #333333;
+  text-decoration: none;
+  cursor: default;
 }

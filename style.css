@@ -3,47 +3,31 @@
 ==================================== */
 .scoreboard {
   margin: 16px 0;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
 .scoreboard-wrapper {
   border-radius: 6px;
-  overflow-x: visible; /* PCではスクロールなし */
+  overflow-x: visible;
 }
 
-/* 表全体の枠線 */
 .scoreboard table {
-  border: 1px solid #ccc;
   border-collapse: separate;
   border-spacing: 0;
+  font-size: 15px;
+  width: 100%;
   border-radius: 6px;
   overflow: visible;
-  font-size: 15px;
-  min-width: 960px;
-  width: 100%;
+  border: 1px solid #ccc;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
-/* セルの枠線（内側） */
 .scoreboard th,
 .scoreboard td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
-}
-
-/* 左上・右上の角丸 */
-.scoreboard thead th:first-child {
-  border-top-left-radius: 6px;
-}
-.scoreboard thead th:last-child {
-  border-top-right-radius: 6px;
-}
-
-/* 左下・右下の角丸 */
-.scoreboard tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 6px;
-}
-.scoreboard tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 6px;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
 /* 左上・右上の角丸 */
@@ -87,6 +71,7 @@
   .scoreboard table {
     min-width: 960px;
   }
+}
 
 /* ====================================
    ドジャース成績
@@ -337,6 +322,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

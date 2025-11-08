@@ -152,6 +152,34 @@ section td {
   color: #444;
 }
 
+.player-summary {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.atbat-block,
+.pitcher-block {
+  flex: 1 1 300px;
+}
+
+.atbat-list,
+.pitcher-stats {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5em;
+}
+
+.atbat-list li,
+.pitcher-stats li {
+  margin-bottom: 0.4em;
+  font-size: 0.95em;
+  color: #444;
+}
+
+
 /* ====================================
    基本設定（フォント・画像・装飾・仕切り線）
 ==================================== */
@@ -278,6 +306,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

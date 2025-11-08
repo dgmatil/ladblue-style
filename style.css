@@ -3,7 +3,7 @@
 ==================================== */
 .scoreboard {
   margin: 16px 0;
-  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard-wrapper {
@@ -12,13 +12,14 @@
 }
 
 .scoreboard table {
-  border: 1px solid #bbb;
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 6px;
-  width: 100%;
   font-size: 15px;
+  width: 100%;
+  border-radius: 6px;
   overflow: visible;
+  border: 1px solid #bbb;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 .scoreboard th,
@@ -26,6 +27,7 @@
   border: 1px solid #bbb;
   padding: 8px;
   text-align: center;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 /* 左上・右上の角丸 */
@@ -60,134 +62,6 @@
   font-weight: bold;
 }
 
-/* ✅ スマホ・タブレットのみスクロール対応 */
-@media (max-width: 960px) {
-  .scoreboard-wrapper {
-    overflow-x: auto;
-  }
-
-  .scoreboard table {
-    min-width: 960px;
-  }
-}
-
-/* ====================================
-   ドジャース成績
-==================================== */
-.dodgers-stats {
-  margin-bottom: 2em;
-}
-
-.dodgers-stats h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Noto Sans JP';
-}
-
-.dodgers-stats table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 5px;
-  overflow: hidden;
-  font-family: 'Noto Sans JP';
-}
-
-.dodgers-stats th,
-.dodgers-stats td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
-/* ====================================
-   選手成績（大谷・山本・佐々木）
-==================================== */
-.ohtani-stats,
-.yamamoto-stats,
-.sasaki-stats {
-  margin-bottom: 2em;
-}
-
-.ohtani-stats h2,
-.yamamoto-stats h2,
-.sasaki-stats h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Noto Sans JP';
-}
-
-.ohtani-stats table,
-.yamamoto-stats table,
-.sasaki-stats table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 5px;
-  overflow: hidden;
-  font-family: 'Noto Sans JP';
-}
-
-.ohtani-stats th, .ohtani-stats td,
-.yamamoto-stats th, .yamamoto-stats td,
-.sasaki-stats th, .sasaki-stats td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
-/* ====================================
-   次戦情報
-==================================== */
-.next-game {
-  border-top: 1px solid #ccc;
-  padding-top: 12px;
-  margin-top: 20px;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.next-game h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Noto Sans JP';
-}
-
-.next-game ul {
-  padding-left: 1em;
-  list-style: disc;
-  font-family: 'Noto Sans JP';
-}
-
-/* ====================================
-   汎用構造（section・table・見出し）
-==================================== */
-section {
-  margin-bottom: 2em;
-}
-
-section h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: 'Noto Sans JP';
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 5px;
-  overflow: hidden;
-  font-family: 'Noto Sans JP';
-}
-
-th, td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-}
-
 /* ====================================
    基本設定（フォント・画像・装飾）
 ==================================== */
@@ -213,6 +87,7 @@ h3.post-title,
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
   font-weight: 500;
 }
+
 .post-body {
   line-height: 1.7 !important;
   overflow: visible !important;
@@ -319,13 +194,3 @@ kbd {
     font-size: 1.3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-

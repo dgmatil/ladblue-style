@@ -180,7 +180,7 @@ section td {
 }
 
 .player-inline {
-  font-size: 0; /* インラインブロックの隙間対策 */
+  font-size: 0;
   margin-bottom: 2em;
 }
 
@@ -193,8 +193,8 @@ section td {
 
 .player-inline .player-box ul {
   list-style: none;
-  padding-left: 0;
-  margin-top: 0.5em;
+  padding: 0;
+  margin: 0;
 }
 
 .player-inline .player-box li {
@@ -350,6 +350,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

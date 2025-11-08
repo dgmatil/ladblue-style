@@ -52,17 +52,6 @@
   font-weight: bold;
 }
 
-/* スマホ・タブレットのみスクロール対応 */
-@media (max-width: 960px) {
-  .scoreboard-wrapper {
-    overflow-x: auto;
-  }
-
-  .scoreboard table {
-    min-width: 960px;
-  }
-}
-
 /* ====================================
    ドジャース成績
 ==================================== */
@@ -294,17 +283,21 @@ kbd {
 /* ====================================
    レスポンシブ対応（最後尾）
 ==================================== */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+  .scoreboard-wrapper {
+    overflow-x: auto;
+  }
+
+  .scoreboard table {
+    min-width: 960px;
+  }
+
   .game-report {
     padding: 12px;
     margin: 12px auto;
- 
+  }
 
-
-
-
-
-
-
-
-
+  .game-header h1 {
+    font-size: 1.3rem;
+  }
+}

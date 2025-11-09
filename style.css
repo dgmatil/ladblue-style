@@ -284,22 +284,11 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 0.1em 0 1.5em; /* ← 上の余白はそのまま */
+ul ul li::before {
+  content: "– "; /* 中黒の代わりにハイフンなどを使ってもOK */
+  color: #666;
 }
 
-.post-divider {
-  border-top: 1px dashed #e6eef9;
-  margin: 20px 0;
-}
-
-.dotted-underline {
-  border-bottom: 1px dotted #333333;
-  text-decoration: none;
-  cursor: default;
-}
 
 /* ====================================
    stopneko レガシー１
@@ -341,6 +330,23 @@ kbd {
   min-width: 1em;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.1em 0 1.5em; /* ← 上の余白はそのまま */
+}
+
+.post-divider {
+  border-top: 1px dashed #e6eef9;
+  margin: 20px 0;
+}
+
+.dotted-underline {
+  border-bottom: 1px dotted #333333;
+  text-decoration: none;
+  cursor: default;
+}
+
 /* ====================================
    ウィジェット
 ==================================== */
@@ -369,6 +375,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

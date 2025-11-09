@@ -284,14 +284,14 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
-ul ul {
-  list-style-type: none !important;
-  margin-left: 0 !important;
-  padding-left: 1em !important;
+.player-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
-ul ul li::before {
-  content: "– ";
-  color: #666;
+.player-box li {
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 
@@ -380,6 +380,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

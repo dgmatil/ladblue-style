@@ -347,24 +347,6 @@ kbd {
 .widget-title {
   text-transform: none;
 }
-.widget-title {
-  font-size: 1em;
-  font-weight: 600;
-  margin: 1.2em 0 0.5em;
-  color: #333;
-}
-.sidebar .widget-content a {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  color: #333;
-  text-decoration: none;
-  margin: 4px 0;
-}
-.sidebar .widget-content a:hover {
-  background-color: #e0e0e0;
-}
 
 /* ====================================
    レスポンシブ対応（最後尾）
@@ -387,6 +369,7 @@ kbd {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -284,11 +284,14 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
-/* 内側のulのリストマークを非表示にする */
 ul ul {
-  list-style: none;
-  padding-left: 1em; /* 適度なインデントは残す */
-  margin: 0;
+  list-style-type: none !important;
+  margin-left: 0 !important;
+  padding-left: 1em !important;
+}
+ul ul li::before {
+  content: "– ";
+  color: #666;
 }
 
 
@@ -377,6 +380,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

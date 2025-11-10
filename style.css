@@ -1,4 +1,37 @@
 /* ====================================
+   時間軸を感じる投稿構成（見出しの上）
+==================================== */
+.timeline-label {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-left: 1em;
+  margin: 2em 0 1em;
+  position: relative;
+}
+
+.timeline-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 6px;
+  height: 1.2em;
+  border-radius: 3px;
+}
+
+.timeline-label.pre::before {
+  background-color: #5c9eff; /* 青：試合前 */
+}
+
+.timeline-label.live::before {
+  background-color: #e94e4e; /* 赤：試合中 */
+}
+
+.timeline-label.post::before {
+  background-color: #999; /* グレー：試合後 */
+}
+
+/* ====================================
    スターティング・ラインナップ
 ==================================== */
 .lineup-table {
@@ -450,6 +483,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

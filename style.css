@@ -1,4 +1,42 @@
 /* ====================================
+   スターティング・ラインナップ
+==================================== */
+.lineup-table {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.lineup-column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.lineup-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5em 0.8em;
+  font-size: 0.95em;
+  color: #333;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  .lineup-column {
+    flex: 1 1 100%;
+  }
+}
+
+/* ====================================
    スコアボード（完全安定構成）
 ==================================== */
 .scoreboard-wrapper {
@@ -389,6 +427,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

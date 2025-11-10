@@ -7,19 +7,18 @@
   font-size: 1.2em;
   font-weight: 600;
   margin: 2em 0 1em;
-  padding-left: 0.1em; /* ← さらに2px左へ詰める */
+  padding-left: 0.1em;
   line-height: 1.4;
   position: relative;
-  top: -2px; /* ← テキスト全体を2px上へ */
 }
 
 .timeline-label::before {
   content: "";
   display: inline-block;
   width: 6px;
-  height: 1em;
+  height: 1.4em; /* ← テキストの高さに合わせる */
   border-radius: 3px;
-  margin-right: 0.4em; /* ← テキストとの距離も微調整 */
+  margin-right: 0.4em;
   flex-shrink: 0;
 }
 
@@ -501,6 +500,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

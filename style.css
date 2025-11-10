@@ -290,8 +290,13 @@ a[style*="padding"] {
   padding-left: 0;
 }
 
+.player-inline .player-box ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
 .player-inline .player-box ul li {
-  list-style-type: none !important;
   padding-left: 1em !important;
   text-indent: -1em !important;
 }
@@ -381,6 +386,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

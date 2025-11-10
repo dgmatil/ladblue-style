@@ -297,12 +297,13 @@ a[style*="padding"] {
 }
 
 .player-inline .player-box ul li {
+  list-style: none !important;
   padding-left: 1em !important;
   text-indent: -1em !important;
 }
 
 .player-inline .player-box ul li::marker {
-  content: none !important;
+  content: "" !important;
 }
 
 
@@ -391,6 +392,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

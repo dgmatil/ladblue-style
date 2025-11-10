@@ -31,7 +31,7 @@
 }
 
 .timeline-label.post::before {
-  background-color: #999;
+  background-color: #1D1A17;
 }
 
 
@@ -500,6 +500,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

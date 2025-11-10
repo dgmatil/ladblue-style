@@ -1,3 +1,35 @@
+
+/* ====================================
+   見出しリンク（アンカーリンク）
+==================================== */.post-index {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+}
+
+.post-index ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5em;
+}
+
+.post-index li {
+  margin-bottom: 0.3em;
+}
+
+.post-index a {
+  text-decoration: none;
+  color: #0055aa;
+}
+
+.post-index a:hover {
+  text-decoration: underline;
+}
+
+
 /* ====================================
    時間軸を感じる投稿構成（見出しの上）
 ==================================== */
@@ -533,6 +565,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

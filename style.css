@@ -31,6 +31,15 @@
   background-color: #999; /* グレー：試合後 */
 }
 
+.section-block {
+  background-color: #fdfdfd;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  box-shadow: 0 0 0.5em rgba(0,0,0,0.03);
+}
+
+
 /* ====================================
    スターティング・ラインナップ
 ==================================== */
@@ -483,6 +492,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

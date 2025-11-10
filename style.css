@@ -21,14 +21,29 @@
 }
 
 .lineup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 0.5em 0.8em;
   font-size: 0.95em;
   color: #333;
-  box-shadow: none;
 }
+
+.lineup-name {
+  text-align: left;
+  flex: 1;
+}
+
+.lineup-pos {
+  text-align: right;
+  width: 2.5em;
+  font-weight: bold;
+  color: #555;
+}
+
 
 @media screen and (max-width: 600px) {
   .lineup-column {
@@ -427,6 +442,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

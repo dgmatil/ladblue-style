@@ -291,20 +291,17 @@ a[style*="padding"] {
 }
 
 .player-inline .player-box ul {
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin: 0 !important;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.player-inline .player-box ul li {
-  list-style: none !important;
-  padding-left: 1em !important;
-  text-indent: -1em !important;
+.player-inline .player-box ul li::before {
+  content: "・";
+  margin-right: 0.5em;
+  color: #333;
 }
 
-.player-inline .player-box ul li::marker {
-  content: "" !important;
-}
 
 
 /* ====================================
@@ -392,6 +389,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

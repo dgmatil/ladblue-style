@@ -62,15 +62,25 @@
 }
 
 .lineup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2.2em;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 0.5em 0.8em;
   font-size: 0.95em;
   color: #333;
-  min-height: 2.2em;
-  display: flex;
-  align-items: center;
+}
+
+.lineup-order {
+  flex: 1;
+}
+
+.lineup-position {
+  flex-shrink: 0;
+  text-align: right;
 }
 
 .lineup-right {
@@ -104,6 +114,7 @@
   margin-bottom: 0.3em;
   display: flex;
   justify-content: space-between;
+  gap: 0.5em;
 }
 
 .dotted-underline {
@@ -521,6 +532,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

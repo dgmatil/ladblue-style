@@ -80,9 +80,10 @@
 }
 
 .lineup-position {
+  display: inline-block;
+  width: 3.5em; /* ← 全守備位置を同じ幅に */
+  text-align: center; /* ← 中央揃えで均等配置 */
   flex-shrink: 0;
-  text-align: right;
-  min-width: 3.5em;
 }
 
 .lineup-right {
@@ -532,6 +533,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

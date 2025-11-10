@@ -374,11 +374,20 @@ a[style*="padding"] {
 }
 
 .menuLineLightW.sub {
-  border-left: 4px solid #ccc;
-  padding-left: 0.6em;
+  position: relative;
+  padding-left: 1.4em;
   font-size: 1em;
   font-weight: 500;
   margin: 1em 0 0.5em;
+}
+
+.menuLineLightW.sub::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #888;
+  font-size: 0.95em;
 }
 
 kbd {
@@ -438,6 +447,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

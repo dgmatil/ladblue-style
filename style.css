@@ -284,16 +284,11 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
-.player-box ul {
+.player-box ul li {
   list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-.player-box li {
-  text-indent: -1em;
   padding-left: 1em;
+  text-indent: -1em;
 }
-
 
 /* ====================================
    stopneko レガシー１
@@ -380,32 +375,3 @@ hr {
     font-size: 1.3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

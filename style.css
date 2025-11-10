@@ -37,9 +37,6 @@
 
 
 
-
-
-
 .section-block {
   background-color: #fdfdfd;
   padding: 1em;
@@ -51,29 +48,21 @@
 /* ====================================
    スターティング・ラインナップ
 ==================================== */
-.lineup-table {
+.lineup-info-block {
   display: flex;
-  justify-content: space-between;
-  gap: 2%;
   flex-wrap: wrap;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1em;
-  margin-bottom: 1.5em;
+  gap: 2%;
+  margin-bottom: 2em;
 }
 
-.lineup-column {
+.lineup-left {
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.4em;
 }
 
 .lineup-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -82,24 +71,45 @@
   color: #333;
 }
 
-.lineup-name {
-  text-align: left;
-  flex: 1;
+.lineup-right {
+  flex: 1 1 50%;
+  font-size: 0.95em;
+  color: #333;
 }
 
-.lineup-pos {
-  text-align: right;
-  width: 2.5em;
-  font-weight: bold;
-  color: #555;
+.player-stats {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.8em;
 }
 
+.stats-title {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.player-stats ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+.player-stats li {
+  margin-bottom: 0.3em;
+}
+
+.dotted-underline {
+  border-bottom: 1px dotted #999;
+  cursor: help;
+}
 
 @media screen and (max-width: 600px) {
-  .lineup-column {
-    flex: 1 1 100%;
+  .lineup-info-block {
+    flex-direction: column;
   }
 }
+
 
 /* ====================================
    スコアボード（完全安定構成）
@@ -500,6 +510,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

@@ -301,6 +301,11 @@ a[style*="padding"] {
   text-indent: -1em !important;
 }
 
+.player-inline .player-box ul li::marker {
+  content: none !important;
+}
+
+
 /* ====================================
    stopneko レガシー１
 ==================================== */
@@ -386,6 +391,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

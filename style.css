@@ -4,31 +4,34 @@
 .timeline-label {
   font-size: 1.2em;
   font-weight: 600;
-  padding-left: 1em;
+  padding-left: 0.8em; /* 左詰め強化 */
   margin: 2em 0 1em;
   position: relative;
+  line-height: 1.4;
+  display: flex;
+  align-items: center; /* 垂直揃え */
 }
 
 .timeline-label::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 0.2em;
+  display: inline-block;
   width: 6px;
-  height: 1.2em;
+  height: 1em;
   border-radius: 3px;
+  margin-right: 0.4em; /* テキストとの距離を調整 */
+  flex-shrink: 0;
 }
 
 .timeline-label.pre::before {
-  background-color: #5c9eff; /* 青：試合前 */
+  background-color: #5c9eff;
 }
 
 .timeline-label.live::before {
-  background-color: #e94e4e; /* 赤：試合中 */
+  background-color: #e94e4e;
 }
 
 .timeline-label.post::before {
-  background-color: #1D1A17; /* ほぼ黒：試合後 */
+  background-color: #999;
 }
 
 .section-block {
@@ -38,7 +41,6 @@
   margin-bottom: 2em;
   box-shadow: 0 0 0.5em rgba(0,0,0,0.03);
 }
-
 
 /* ====================================
    スターティング・ラインナップ
@@ -492,6 +494,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

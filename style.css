@@ -45,6 +45,9 @@
 /* ====================================
    スターティング・ラインナップ＋試合前情報
 ==================================== */
+/* ====================================
+   スターティング・ラインナップ＋試合前情報
+==================================== */
 .lineup-info-block {
   display: flex;
   flex-wrap: wrap;
@@ -76,11 +79,13 @@
 
 .lineup-order {
   flex: 1;
+  text-align: left;
 }
 
 .lineup-position {
   flex-shrink: 0;
   text-align: right;
+  min-width: 3.5em;
 }
 
 .lineup-right {
@@ -532,6 +537,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

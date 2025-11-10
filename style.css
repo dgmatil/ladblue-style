@@ -284,8 +284,12 @@ a[style*="padding"] {
   padding: 0 !important;
 }
 
+.player-box ul {
+  padding-left: 0;
+  margin: 0;
+}
 .player-box ul li {
-  list-style-type: none;
+  list-style-type: none !important;
   padding-left: 1em;
   text-indent: -1em;
 }
@@ -375,3 +379,4 @@ hr {
     font-size: 1.3rem;
   }
 }
+

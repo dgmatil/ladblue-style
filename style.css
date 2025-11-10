@@ -373,34 +373,12 @@ a[style*="padding"] {
   margin-bottom: 0.5em;
 }
 
-.menuLineDarkW {
-  border-left: 5px solid #333;
-  padding-left: 0.6em;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin: 1.5em 0 0.8em;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-}
-
 .menuLineLightW.sub {
-  position: relative;
-  padding-left: 0.8em;
+  border-left: 4px solid #ccc;
+  padding-left: 0.6em;
   font-size: 1em;
   font-weight: 500;
-  background-color: #f8f8f8;
-  border-radius: 3px;
   margin: 1em 0 0.5em;
-}
-
-.menuLineLightW.sub::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.3em;
-  bottom: 0.3em;
-  width: 3px;
-  background-color: #ccc;
 }
 
 kbd {
@@ -460,6 +438,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

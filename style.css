@@ -34,9 +34,6 @@
   background-color: #1D1A17;
 }
 
-
-
-
 .section-block {
   background-color: #fdfdfd;
   padding: 1em;
@@ -46,7 +43,7 @@
 }
 
 /* ====================================
-   スターティング・ラインナップ
+   スターティングラインナップ＋大谷・山本累計成績
 ==================================== */
 .lineup-info-block {
   display: flex;
@@ -109,6 +106,7 @@
     flex-direction: column;
   }
 }
+
 
 
 /* ====================================
@@ -510,6 +508,7 @@ hr {
     font-size: 1.3rem;
   }
 }
+
 
 
 

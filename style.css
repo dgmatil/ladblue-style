@@ -1,11 +1,12 @@
 /* ------------------------------
    全体
 ------------------------------ */
-html body {
-  background: #f7f7f7;
+body, html body, body#layout, body.blog {
+  background: #f7f7f7 !important;
   color: #222;
   line-height: 1.6;
 }
+
 
 /* 中央固定幅レイアウト（PC） */
 .layout {
@@ -162,4 +163,5 @@ th {
     padding: 6px 8px;
   }
 }
+
 

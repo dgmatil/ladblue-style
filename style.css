@@ -1,8 +1,7 @@
 /* ------------------------------
    全体
 ------------------------------ */
-body {
-  font-family: system-ui, sans-serif;
+html body {
   background: #f7f7f7;
   color: #222;
   line-height: 1.6;
@@ -163,3 +162,4 @@ th {
     padding: 6px 8px;
   }
 }
+

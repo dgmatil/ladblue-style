@@ -1,615 +1,165 @@
-
-/* ====================================
-【目次】見出しリンク（アンカーリンク）
-==================================== */.post-index {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.8em;
-  margin-bottom: 1.5em;
-  font-size: 0.95em;
-}
-
-.post-index {
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.8em;
-  margin-bottom: 1.5em;
-  font-size: 0.95em;
-}
-
-.post-index ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5em;
-}
-
-.post-index ul ul {
-  padding-left: 1em;
-  margin-top: 0.3em;
-}
-
-.post-index li {
-  margin-bottom: 0.3em;
-}
-
-.post-index a {
-  text-decoration: none;
-  color: #0055aa;
-}
-
-.post-index a:hover {
-  text-decoration: underline;
-}
-
-
-/* ====================================
-   時間軸を感じる投稿構成（見出しの上）
-==================================== */
-.timeline-label {
-  display: flex;
-  align-items: center;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin: 2em 0 1em;
-  padding-left: 0.1em;
-  line-height: 1.4;
-  position: relative;
-}
-
-.timeline-label::before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 1.4em; /* ← テキストの高さに合わせる */
-  border-radius: 3px;
-  margin-right: 0.4em;
-  flex-shrink: 0;
-}
-
-.timeline-label.pre::before {
-  background-color: #5c9eff;
-}
-
-.timeline-label.live::before {
-  background-color: #e94e4e;
-}
-
-.timeline-label.post::before {
-  background-color: #1D1A17;
-}
-
-.section-block {
-  background-color: #fdfdfd;
-  padding: 1em;
-  border-radius: 5px;
-  margin-bottom: 2em;
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.03);
-}
-
-/* ====================================
-   スターティング・ラインナップ＋試合前情報
-==================================== */
-.lineup-info-block {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2%;
-  margin-bottom: 2em;
-  align-items: stretch;
-}
-
-.lineup-left {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
-  min-height: 24em;
-}
-
-.lineup-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 2.2em;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 0.5em 0.8em;
-  font-size: 0.95em;
-  color: #333;
-}
-
-.lineup-order {
-  flex: 1;
-  text-align: left;
-}
-
-.lineup-position {
-  display: inline-block;
-  width: 3.5em; /* ← 全守備位置を同じ幅に */
-  text-align: center; /* ← 中央揃えで均等配置 */
-  flex-shrink: 0;
-}
-
-.lineup-right {
-  flex: 1 1 50%;
-  font-size: 0.95em;
-  color: #333;
-  min-height: 24em;
-}
-
-.player-stats {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.8em;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.stats-title {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
-
-.player-stats ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1em;
-}
-
-.player-stats li {
-  margin-bottom: 0.3em;
-}
-
-.dotted-underline {
-  border-bottom: 1px dotted #999;
-  cursor: help;
-}
-
-.stats-spacer {
-  height: 2.2em;
-}
-
-@media screen and (max-width: 600px) {
-  .lineup-info-block {
-    flex-direction: column;
-  }
-}
-
-
-
-/* ====================================
-   スコアボード（完全安定構成）
-==================================== */
-.scoreboard-wrapper {
-  overflow-x: auto;
-  border-radius: 6px;
-  box-shadow: inset 0 0 0 1px #ccc; /* ✅ 外枠線を影で描画 */
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #fff;
-}
-
-.scoreboard {
-  border-collapse: collapse;
-  width: 100%;
-  border: none;
-}
-
-.scoreboard th,
-.scoreboard td {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-  text-align: center;
-  background-clip: padding-box;
-}
-
-.scoreboard th {
-  background-color: #D1D1D1;
-  color: #444;
-}
-
-.scoreboard td:first-child {
-  background-color: #f8f8f8;
-}
-
-/* ✅ 左下角丸対策：最終行の左端セルだけ背景色を透明に */
-.scoreboard tbody tr:last-child td:first-child {
-  background-color: transparent;
-}
-
-.scoreboard td:nth-child(2) {
-  font-weight: normal;
-}
-
-/* R列太字 */
-.scoreboard th:nth-child(11),
-.scoreboard td:nth-child(11) {
-  font-weight: bold;
-}
-
-@media screen and (max-width: 600px) {
-  .scoreboard {
-    font-size: 12px;
-  }
-}
-
-.scoreboard-label {
-  color: #d00;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-left: 8px;
-}
-
-.scoreboard-meta-inline {
-  font-size: 0.9em;
-  color: #666;
-  margin: 4px 0 12px;
+/* ------------------------------
+   全体
+------------------------------ */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f7f7f7;
+  color: #222;
   line-height: 1.6;
 }
 
-.jp-tag {
-  font-size: 0.75em;
-  color: #999;
-  font-weight: bold;
-  vertical-align: super;
-  letter-spacing: 0.03em;
-  margin-left: 0px; /* ← 完全に詰めて一体化 */
+/* 中央固定幅レイアウト（PC） */
+.layout {
+  width: 1275px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
 }
 
-.align-the-height {
-  font-size: 1em;
-  position: relative;
-  top: -0.03em;
-  letter-spacing: 0.01em;
+/* ------------------------------
+   ヘッダー
+------------------------------ */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
 }
 
-.link-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 2em;
+.header-inner {
+  width: 1275px;
+  margin: 0 auto;
 }
 
-.link-list li {
-  margin-bottom: 1.5em;
-}
-
-.link-list strong {
-  font-size: 1em;
+.site-title a {
+  text-decoration: none;
   color: #222;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.link-comment {
-  font-size: 0.9em;
-  color: #666;
-  display: block;
-  margin: 0.2em 0 0.4em;
+/* ------------------------------
+   ナビ
+------------------------------ */
+.site-nav {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-
-
-/* ====================================
-   成績表（共通テーブルスタイル）
-==================================== */
-
-.section-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 0.6em; /* ← 1em → 0.6em に減らす */
-  color: #333;
+.nav-section {
+  width: 1275px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
-section table {
+/* ------------------------------
+   メイン（左）
+------------------------------ */
+.main-area {
+  width: 975px;
+}
+
+/* 記事 */
+.post {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-body img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* ------------------------------
+   サイドバー（右）
+------------------------------ */
+.sidebar-area {
+  width: 300px;
+}
+
+.sidebar-area .widget {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* ------------------------------
+   フッター
+------------------------------ */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  width: 1275px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   表（MLBスコア・成績表）
+------------------------------ */
+table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #bbb;
+  margin: 15px 0;
+  background: #fff;
   border-radius: 5px;
   overflow: hidden;
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
-section th,
-section td {
-  border: 1px solid #bbb;
-  padding: 8px 12px;
+th, td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
   text-align: left;
 }
 
-.atbat-list,
-.pitcher-stats {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 2em;
+th {
+  background: #eee;
+  font-weight: 600;
 }
 
-.atbat-list li,
-.pitcher-stats li {
-  margin-bottom: 0.4em;
-  font-size: 0.95em;
-  color: #444;
-}
+/* ------------------------------
+   スマホ最適化（768px以下）
+------------------------------ */
+@media (max-width: 768px) {
 
-.player-summary {
-  display: flex;
-  gap: 2em;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 2em;
-}
-
-.player-box {
-  flex: 1 1 300px;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.player-box ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-}
-
-.player-box li {
-  margin-bottom: 0.4em;
-  font-size: 0.95em;
-  color: #444;
-}
-
-.player-inline {
-  font-size: 0;
-  margin-bottom: 2em;
-}
-
-.player-inline .player-box {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-  font-size: 1rem;
-}
-
-.player-inline .player-box ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.player-inline .player-box li {
-  margin-bottom: 0.4em;
-  font-size: 0.95em;
-  color: #444;
-}
-
-.atbat-block,
-.pitcher-block {
-  flex: 1 1 300px;
-}
-
-.atbat-list,
-.pitcher-stats {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5em;
-}
-
-.atbat-list li,
-.pitcher-stats li {
-  margin-bottom: 0.4em;
-  font-size: 0.95em;
-  color: #444;
-}
-
-
-/* ====================================
-   基本設定（フォント・画像・装飾・仕切り線）
-==================================== */
-html, body {
-  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.01em !important;
-  font-variant-ligatures: none;
-}
-
-body, p, li, td, th {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
-  font-weight: 400;
-}
-
-.post-title,
-.entry-title,
-h3.post-title,
-.sidebar h2,
-.sidebar .widget-title,
-.widget .title,
-.widget h2 {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
-  font-weight: 500;
-}
-
-.post-body {
-  line-height: 1.7 !important;
-  overflow: visible !important;
-}
-
-.post-body [style*="font-family"] {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif !important;
-  font-weight: 400 !important;
-}
-
-.post-body span[style*="font-size: x-small;"] {
-  font-size: small !important;
-}
-
-img, .separator img, a img {
-  display: block;
-  margin: 0 auto;
-  vertical-align: bottom;
-}
-
-.post-body img.center-img {
-  display: block;
-  margin: 0 auto;
-  float: none !important;
-}
-
-.separator {
-  margin: 1em auto;
-  text-align: center;
-}
-
-a[style*="padding"] {
-  padding: 0 !important;
-}
-
-.player-inline .player-box ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.player-inline .player-box ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.player-inline .player-box ul li::before {
-  content: "・";
-  margin-right: 0.5em;
-  color: #333;
-}
-
-
-
-/* ====================================
-   stopneko レガシー１
-==================================== */
-.menuLineLightW {
-  margin: 0px 0px 20px 0px;
-  padding: 0px 1px 0px 8px;
-  border-width: 0px 0px 1px 9px;
-  border-color: #CCCCCC;
-  border-style: solid;
-  background: white;
-  color: #333333;
-  border-bottom: 0px solid #676767;
-  display: inline-block;
-  margin-bottom: 0.5em;
-}
-
-.menuLineLightW.sub {
-  position: relative;
-  padding-left: 1.4em;
-  font-size: 1em;
-  font-weight: 500;
-  margin: 1em 0 0.5em;
-  background: none;
-  border: none;
-}
-
-.menuLineLightW.sub::before {
-  content: "▶";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #888;
-  font-size: 0.95em;
-}
-
-
-kbd {
-  background-color: #dddddd;
-  padding: 0 2px;
-  white-space: nowrap;
-  color: #000000;
-  outline: 1px solid #bbbbbb;
-  border: 1px solid #bbbbbb;
-  border-top-color: #ffffff;
-  border-left-color: #ffffff;
-  min-width: 1em;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 0.1em 0 1.5em; /* ← 上の余白はそのまま */
-}
-
-.post-divider {
-  border-top: 1px dashed #e6eef9;
-  margin: 20px 0;
-}
-
-.dotted-underline {
-  border-bottom: 1px dotted #333333;
-  text-decoration: none;
-  cursor: default;
-}
-
-/* ====================================
-   ウィジェット
-==================================== */
-.widget-title {
-  text-transform: none;
-}
-
-/* ====================================
-   レスポンシブ対応（最後尾）
-==================================== */
-@media (max-width: 960px) {
-  .scoreboard-wrapper {
-    overflow-x: auto;
+  .layout {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 10px;
   }
 
-  .scoreboard {
-    min-width: 720px;
+  .header-inner,
+  .nav-section,
+  .footer-inner {
+    width: 100%;
+    padding: 0 10px;
   }
 
-  .game-report {
-    padding: 12px;
-    margin: 12px auto;
+  .main-area,
+  .sidebar-area {
+    width: 100%;
   }
 
-  .game-header h1 {
-    font-size: 1.3rem;
+  .post {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 6px 8px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
